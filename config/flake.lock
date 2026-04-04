@@ -1,0 +1,82 @@
+{
+  "nodes": {
+    "mesa-src": {
+      "flake": false,
+      "locked": {
+        "host": "gitlab.freedesktop.org",
+        "lastModified": 1775246509,
+        "narHash": "sha256-yy6xarvibU/e3Nl9mjNTa4rufVJTPJvhprUEulpCWKM=",
+        "owner": "mesa",
+        "repo": "mesa",
+        "rev": "21952ffb0767fa101502f3a841355c5757408cca",
+        "type": "gitlab"
+      },
+      "original": {
+        "host": "gitlab.freedesktop.org",
+        "owner": "mesa",
+        "ref": "main",
+        "repo": "mesa",
+        "type": "gitlab"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1775036866,
+        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1775036866,
+        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "xe-driver-flake": "xe-driver-flake"
+      }
+    },
+    "xe-driver-flake": {
+      "inputs": {
+        "mesa-src": "mesa-src",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1775256725,
+        "narHash": "sha256-KWigjceSbtfRlYwLur3CIyQgFIJRQgW3byx3MLjfH6Y=",
+        "owner": "cmspam",
+        "repo": "xe-native-context-nix",
+        "rev": "b2d8f09cb23c9aea2f8a6e1e576c18e644639019",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cmspam",
+        "repo": "xe-native-context-nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
